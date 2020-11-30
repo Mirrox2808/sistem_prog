@@ -45,7 +45,7 @@ def pur():
 
 root = Tk()
 l1 = Label()
-e1 = Entry(width=15, justify=CENTER)
+e1 = Entry(width=20, justify=CENTER)
 b1 = Button(width=3, height=1, bg='#ff0000')
 b2 = Button(width=3, height=1, bg='#ff7d00')
 b3 = Button(width=3, height=1, bg='#ffff00')
