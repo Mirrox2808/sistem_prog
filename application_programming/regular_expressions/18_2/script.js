@@ -1,0 +1,1 @@
+alert(/^https?/.test('https://vk.com'));
