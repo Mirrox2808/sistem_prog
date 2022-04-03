@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Пример веб-страницы</title>
+ </head>
+ <body>
+   <div id="app">
+
+<p>   
+  <textarea v-model="newPhone"></textarea>
+   <button v-on:click="phones.push(newPhone)">Добавить</button>
+</p>
+
+  <ul>
+  <li v-for="(phone, index) in phones">
+  <p>{{ phone }} <button v-on:click="phones.splice(index, 1)">Удалить</button></p>
+  </li>
+  </ul>
+
+
+</div>
+   <script src="vue.js"></script>
+   <script src="script.js"></script>
+    
+ </body>
+</html>
