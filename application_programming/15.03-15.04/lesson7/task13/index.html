@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Пример веб-страницы</title>
+ </head>
+ <body>
+   <div id="app">
+
+   <p>Age: 25</p>
+   <p v-if="age <= 18">Подросток</p>
+   <p v-else-if="age >= 19 && age <=25">Молодой человек</p>
+   <p v-else-if="age >=26">Мужчина</p>
+   <p v-else>что-то другое</p>
+
+</div>
+   <script src="vue.js"></script>
+   <script src="script.js"></script>
+    
+ </body>
+</html>
