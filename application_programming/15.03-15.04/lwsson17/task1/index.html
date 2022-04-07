@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <style>
+    ul{list-style-type: none;padding: 0;}
+    li{display: inline-block;}
+    a{padding: 5px;}
+    a.router-link-active, li.router-link-active>a {
+    color: red;
+    }
+</style>
+  <title>Пример веб-страницы</title>
+ </head>
+ <body>
+   <div id="app">
+   
+ <ul>
+      <li><router-link to="/" exact>Home</router-link></li>
+      <li><router-link to="/products">Products</router-link></li>
+      <li><router-link to="/about">About</router-link></li>
+    </ul>
+    <router-view></router-view>
+
+
+</div>
+   <script src="vue.js"></script>
+   <script src="script.js"></script>
+    
+ </body>
+</html>
