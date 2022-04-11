@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html>
- <head>
-  <meta charset="utf-8">
-  <title>Пример веб-страницы</title>
- </head>
- <body>
-   <div id="app">
-   
-  <input type="checkbox">
-  <p v-bind:style="styles1">Абзац</p>
-
-
-</div>
-   <script src="vue.js"></script>
-   <script src="script.js"></script>
-    
- </body>
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="script.js" defer> </script>
+        <link rel="stylesheet" href="style.css">
+        <!-- <script src="/script.js"></script> -->
+    </head>
+    <body>   
+        <div id="app">
+            <label v-for="color in colors" :key="color.title" class="label-checkbox"  :for="color.title.toLowerCase()">
+                <p class="gg" :class="{ 'checked': color.checked }">Title</p>
+              <input type="checkbox" v-model="color.checked" class="check-color" :id="color.title.toLowerCase()" />
+            </label>
+          </div>
+       
+    </body>
 </html>

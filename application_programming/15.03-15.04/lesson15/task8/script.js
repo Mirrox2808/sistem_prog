@@ -1,11 +1,19 @@
+
+
 let app = new Vue({
 	el: '#app',
 	data: {
-		str: '2022.04.04',
+    str: [
+      new Date().getFullYear(),
+      new Date().getMonth(),
+      new Date().getDay(),
+    ],
+		
 	},
 	filters: {
 		formatId: function(value) {
-			return value + '.04.04.2002';
+      const gg = value.reverse();
+			return gg;
 		}
 	}
 });

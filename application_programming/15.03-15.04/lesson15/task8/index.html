@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html>
- <head>
-  <meta charset="utf-8">
-  <title>Пример веб-страницы</title>
- </head>
- <body>
-   <div id="app">
-   
-  <p v-bind:title="str | formatId">Абзац</p>
-
-
-</div>
-   <script src="vue.js"></script>
-   <script src="script.js"></script>
-    
- </body>
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="script.js" defer> </script>
+        <link rel="stylesheet" href="style.css">
+        
+        <!-- <script src="/script.js"></script> -->
+    </head>
+    <body>   
+        <div id="app">
+            <title>{{ formatId }}</title>
+            <p v-bind:id="str | formatId" >{{ str }}</p>
+            <!-- <p v-bind:id="str | formatId">title</p> -->
+          </div>
+       
+    </body>
 </html>

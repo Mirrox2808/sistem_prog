@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="index.css" />
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- <script src="/script.js"></script> -->
+    </head>
+    <body>
+        <div id="app">
+            <button v-on:keyup.left="counter += 'левое нажатие'" v-on:keyup.right="counter += 'правое нажатие'" v-on:keyup.middle="counter += 'среднее нажатие'">Click</button>
+              <span>нажатие: {{ counter }}</span >
+        </div>
+    </body>
+</html>
